@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(7, 18, 50);
+    font-family: Segoe UI;
+}
+
+.navbar{
+    display: flex;
+    padding: 15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight: 500;
+}
+
+.heading-name{
+    font-family: Courier;
+    font-weight: bolder;
+}
+
+.navbar .github-button{
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+}
+
+.github-button:hover{
+    background-color: white;
+    color: rgb(7, 18, 50);
+    transition: 0.5s ease-out;
+}
+
+.init-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    padding: 30px;
+}
+
+.body-text{
+    width: 30%;
+}
+
+.body-text .main{
+    font-size:50px;
+    font-weight: bold;
+}
+
+.body-text .sub{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.image-box{
+    border-radius: 50px;
+    height: 400px;
+    width: 30%;
+}
+
+.image-box img{
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+@media only screen and (max-width:600px){
+    
+    .init-body{
+        flex-direction:column;
+    }
+    
+    .body-text{
+        width: 100%;
+    }
+
+    .image-box{
+        width: 100%;
+    }
+}
